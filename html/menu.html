@@ -31,16 +31,16 @@
                 <a href="#null" class="d-flex align-items-center" >모두보기</a>
               </li>
               <li>
-                <a  href="#null" class="d-flex align-items-center selected">샌드위치</a>
+                <a  href="#null" class="d-flex align-items-center ">샌드위치</a>
               </li>            
               <li>
-                <a href="#null" class="d-flex align-items-center" >피자</a>
+                <a href="#null" class="d-flex align-items-center selected" >피자</a>
               </li>      
               <li>
                 <a href="#null" class="d-flex align-items-center" >음료</a>
               </li>      
               <li>
-                <a href="#null" class="d-flex align-items-center add" data-bs-toggle="modal" data-bs-target="#add-cateegory-modal" >+관리</a>
+                <a href="#null" class="d-flex align-items-center add" >+관리</a>
               </li>                                                                                
             </ul>
           </div>
@@ -51,7 +51,7 @@
           <!-- itemList start -->
           <div class="row row-cols-4 g-4 pl-3 pr-3 pt-2 pb-4 list-bg-shadow">
             <div class="col mb-2">
-              <span class="btn-add-modal-show " data-bs-toggle="modal" data-bs-target="#add-menu-modal">
+              <span class="btn-add-modal-show " >
                 <div class="card menu-add-box h-100 d-flex justify-content-center align-items-center">
                   <i class='bx bx-plus bx-md' ></i>
                 </div>
@@ -296,7 +296,7 @@
           <!-- itemForm start-->
           <h4 class="modal-title">메뉴 추가</h4>
           <!-- slot modal-header end -->
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close"></button>
         </div>
         <div class="modal-body">
           <!-- slot modal-body start -->          
@@ -341,60 +341,5 @@
   </div>
   <!-- add-menu-modal end -->
 
-  <!-- category-form-modal start -->
-  <div class="modal add-cateegory-modal fade" id="add-cateegory-modal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <!-- slot modal-header start -->
-          <h4 slot="modal-title">메뉴 추가</h4>
-          <!-- slot modal-header end -->
-        </div>
-        <div slot="modal-body" class="modal-body">
-          <!-- slot modal-body start -->
-          <h5 class="mb-3">카테고리 목록</h5>
-          
-          <ul class="category-list">
-            <li class="mb-3 d-flex justify-content-between">
-              <p>피자</p> 
-              <div class="edit-box">
-                <a href="#null" class="link"><i class='bx bxs-pencil'></i></a>
-                <a href="#null" class="link"><i class='bx bxs-trash'></i></a>
-              </div>
-            </li>
-            <li class="mb-3 d-flex justify-content-between">
-              <input type="text" class="form-control border-line" value="버거">
-            </li>
-            <li class="mb-3 d-flex justify-content-between">
-              <p>사이드</p>
-              <div class="edit-box">
-                <a href="#null" class="link"><i class='bx bxs-pencil'></i></a>
-                <a href="#null" class="link"><i class='bx bxs-trash'></i></a>
-              </div>              
-            </li>                        
-            <li class="mb-3 d-flex justify-content-between">
-              <p>음료</p>
-              <div class="edit-box">
-                <a href="#null" class="link"><i class='bx bxs-pencil'></i></a>
-                <a href="#null" class="link"><i class='bx bxs-trash'></i></a>
-              </div>              
-            </li>                                    
-          </ul>
-          <!-- slot modal-body end -->
-        </div>
-
-        <div slot="modal-footer" class="modal-footer d-flex flex-column align-items-stretch">
-          <!-- slot modal-footer start -->
-          <div class="input-group">
-            <input type="text" class="form-control border-line">
-            <button class="btn btn-primary">등록</button>
-          </div>
-          <!-- slot modal-footer end -->
-        </div>        
-      </div>
-    </div>
-
-  </div>
-  <!-- category-form-modal end -->
 </body>
 </html>
